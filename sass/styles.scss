@@ -10,4 +10,28 @@ body {
 
 footer {
   background-color: #f8f3f0;
+
+  .row div {
+    text-align: center;
+    color: #2c2f33;
+    @include breakpoint(xs-sm) {
+      padding: 20px;
+
+      &:nth-of-type(6) {
+        padding-bottom: 50px;
+      }
+    }
+    @include breakpoint(md) {
+      padding: 50px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
 }
