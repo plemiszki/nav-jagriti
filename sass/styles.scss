@@ -24,6 +24,40 @@ header {
 
   h2 {
     color: gray;
+    @include breakpoint(xs-sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  h3 {
+    color: black;
+    text-align: center;
+    font-family: 'TeachableSans-SemiBold';
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.staff-bio {
+
+  h4 {
+    text-align: center;
+    font-family: 'TeachableSans-SemiBold';
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  img {
+    display: block;
+    width:  200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  &:not(.no-margin-bottom) p {
+    margin-bottom: 40px;
   }
 }
 
