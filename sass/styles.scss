@@ -8,6 +8,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+header {
+  padding: 40px 0;
+
+  @include breakpoint(xs-sm) {
+    text-align: center;
+  }
+
+  h1 {
+    font-family: 'TeachableSans-SemiBold';
+    line-height: 50px;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    color: gray;
+  }
+}
+
 footer {
   background-color: #f8f3f0;
 
