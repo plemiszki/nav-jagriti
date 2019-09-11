@@ -50,8 +50,9 @@ header {
 
   img {
     display: block;
-    width:  200px;
-    height: 200px;
+    width:  250px;
+    height: 250px;
+    border: solid 1px black;
     margin: auto;
     margin-bottom: 20px;
   }
@@ -62,6 +63,7 @@ header {
 }
 
 footer {
+  margin-top: 40px;
   background-color: #f8f3f0;
 
   .row div {
