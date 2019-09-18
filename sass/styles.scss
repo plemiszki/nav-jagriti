@@ -92,6 +92,24 @@ header {
   }
 }
 
+.contact {
+  font-size: 20px;
+  text-align: center;
+
+  p {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+
+  a {
+    color: black;
+    font-family: 'TeachableSans-Bold';
+  }
+}
+
 footer {
   background-color: #f8f3f0;
   @include breakpoint(xs-sm) {
