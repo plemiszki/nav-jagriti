@@ -31,9 +31,35 @@ header {
 
   h3 {
     color: black;
+    line-height: 40px;
     text-align: center;
     font-family: 'TeachableSans-SemiBold';
     font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.homepage {
+  font-size: 20px;
+  text-align: center;
+  
+  p {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+
+  a {
+    font-size: 16px;
+    font-family: 'TeachableSans-Bold';
+    margin-bottom: 40px;
+  }
+}
+
+.main-content-desktop-margin {
+  @include breakpoint(md) {
     margin-bottom: 20px;
   }
 }
@@ -61,14 +87,16 @@ header {
     margin-bottom: 15px;
   }
 
-  &:not(.no-margin-bottom) p:last-of-type {
+  p:last-of-type {
     margin-bottom: 40px;
   }
 }
 
 footer {
-  margin-top: 40px;
   background-color: #f8f3f0;
+  @include breakpoint(xs-sm) {
+    padding-top: 20px;
+  }
 
   .row div {
     text-align: center;
