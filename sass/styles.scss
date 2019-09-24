@@ -24,9 +24,6 @@ header {
 
   h2 {
     color: gray;
-    @include breakpoint(xs-sm) {
-      margin-bottom: 20px;
-    }
   }
 
   h3 {
@@ -43,6 +40,14 @@ header {
   font-size: 20px;
   text-align: center;
   
+  .row.images {
+    
+    img {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
   p {
     margin-bottom: 20px;
 
