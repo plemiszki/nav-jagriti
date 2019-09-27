@@ -31,9 +31,6 @@ header {
 
   h2 {
     color: gray;
-    @include breakpoint(xs-sm) {
-      margin-bottom: 10px;
-    }
   }
 
   h3 {
@@ -43,6 +40,9 @@ header {
     font-family: 'TeachableSans-SemiBold';
     font-size: 30px;
     margin-bottom: 20px;
+    @include breakpoint(xs-sm) {
+      margin-top: 10px;
+    }
   }
 
   ul.nav-menu {
