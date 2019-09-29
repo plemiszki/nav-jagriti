@@ -70,6 +70,17 @@ header {
   }
 }
 
+.button-row {
+  text-align: center;
+
+
+  a {
+    font-size: 16px;
+    font-family: 'TeachableSans-Bold';
+    margin-bottom: 40px;
+  }
+}
+
 .homepage {
   font-size: 20px;
   text-align: center;
@@ -89,17 +100,69 @@ header {
       margin-bottom: 40px;
     }
   }
-
-  a {
-    font-size: 16px;
-    font-family: 'TeachableSans-Bold';
-    margin-bottom: 40px;
-  }
 }
 
 .main-content-desktop-margin {
   @include breakpoint(md) {
     margin-bottom: 20px;
+  }
+}
+
+.our-story {
+
+  p {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+    
+    &.list-header {
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  h4 {
+    font-family: 'TeachableSans-SemiBold';
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  } 
+
+  li {
+    list-style-type: disc;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: auto;
+
+    @include breakpoint(xs-sm) {
+      margin-bottom: 30px;
+    }
+    @include breakpoint(md) {
+      &:not(:last-of-type) {
+        margin-bottom: 40px;
+      }
+    }
+
+    &.desktop-only {
+      display: none;
+
+      @include breakpoint(md) {
+        display: block;
+      }
+    }
   }
 }
 
