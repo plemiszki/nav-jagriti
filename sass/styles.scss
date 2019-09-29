@@ -164,6 +164,21 @@ header {
       }
     }
   }
+
+  .video-container {
+    text-align: center;
+    margin-bottom: 40px;
+
+    iframe {
+      max-width: 100%;
+    }
+
+    p.video-caption {
+      margin-top: 10px;
+      color: black;
+      font-family: 'TeachableSans-SemiBold';
+    }
+  }
 }
 
 .student-bio, .staff-bio {
